@@ -113,3 +113,10 @@ label:hover {
   border-radius: 15px;
   font-weight: 700;
 }
+
+.projetos button {
+  color: #008cd4;
+  width: 1.7rem;
+  display: grid;
+  place-items: center;
+}
