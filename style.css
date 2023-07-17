@@ -246,3 +246,31 @@ main > div h2 {
   color: #b2b2b2;
   font-size: .8rem;
 }
+
+.aside{
+  display: grid;
+  align-items: center;
+  background-color: #008cd4;
+  row-gap: 2rem;
+}
+
+.aside ul{
+  display: grid;
+  gap: .7rem;
+}
+
+.aside li {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 20px 1fr;
+  column-gap: 1.5rem;
+  color: white;
+}
+
+.aside .aside__main {
+  grid-template-columns: 30px 1fr;
+}
+
+.aside ul:last-of-type {
+  margin-top: 2rem;
+}
