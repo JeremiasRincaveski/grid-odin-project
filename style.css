@@ -17,6 +17,9 @@ html {
 body {
   height: 100%;
   width: 100%;
+  display: grid;
+  grid-template-columns: 17rem 1fr;
+  grid-template-rows: auto 1fr;
 }
 
 button {
@@ -33,13 +36,14 @@ label:hover {
 }
 
 .header {
-  width: 100%;
+  align-items: center;
   display: grid;
+  grid-column: 2;
   grid-template-columns: 2fr 1fr;
   justify-content: space-between;
-  align-items: center;
-  padding-top: .5rem;
+  padding: .5rem 2rem 1rem 2rem;
   row-gap: 1rem;
+  width: 100%;
 }
 
 .search {
@@ -116,11 +120,12 @@ label:hover {
 
 main {
   display: grid;
+  grid-column: 2;
   grid-template-columns: 1fr 15rem;
   grid-template-rows: auto 1fr;
   place-content: center;
   background: #e0e7f0;
-  padding: 1rem 1.5rem 1rem .5rem;
+  padding: 2rem 1.5rem 1rem 1.5rem;
   gap: 2rem;
 }
 
@@ -142,9 +147,9 @@ main > div h2 {
 
 .projeto {
   display: grid;
-  padding: 1.5rem 1rem 1.5rem 2rem;
+  padding: 1.5rem 1.5rem 1.5rem 2rem;
   background-color: #fff;
-  height: 11.75rem;
+  height: 12.6rem;
   grid-template-rows: 1fr auto;
   border-radius: 5px;
   position: relative;
@@ -252,6 +257,12 @@ main > div h2 {
   align-items: center;
   background-color: #008cd4;
   row-gap: 2rem;
+  padding: .8rem 1rem;
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+  grid-template-rows: 4rem 15rem 5rem;
+  justify-content: start;
+  align-items: start;
 }
 
 .aside ul{
@@ -273,4 +284,10 @@ main > div h2 {
 
 .aside ul:last-of-type {
   margin-top: 2rem;
+}
+
+@media (max-width: 1100px) {
+  .header {
+    grid-template-columns: 1fr;
+  }
 }
