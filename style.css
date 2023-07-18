@@ -51,6 +51,7 @@ label:hover {
   align-items: center;
   grid-template-columns: auto 1fr;
   gap: .5rem;
+  max-width: 60vw;
 }
 
 .svg {
@@ -288,6 +289,28 @@ main > div h2 {
 
 @media (max-width: 1100px) {
   .header {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr auto;
+  }
+
+  .search {
+    grid-row: 2;
+    grid-column: 1 / -1;
+  }
+
+  .header__list li:nth-child(1) {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  .header__list li:nth-child(2) {
+    display: none;
+  }
+
+  .header__list li:nth-child(3) {
+    display: none;
+  }
+
+  .header__perfil {
+    grid-row: 1;
   }
 }
